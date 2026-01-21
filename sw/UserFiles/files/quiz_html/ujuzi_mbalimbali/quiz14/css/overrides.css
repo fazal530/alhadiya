@@ -1,0 +1,42 @@
+.imagemaxwidth {max-width: 100%;}
+
+.imagerightalign {float: right;}
+
+.imagecenteralign {display: block;margin-left: auto;margin-right: auto;}
+
+.candidateblock {display: inline-block;}
+
+label {display: table-cell;}
+
+.backgroundie8horizontalstretchtop {position: absolute; top: 0; left: 0; width: 100%;}
+
+.backgroundie8horizontalstretchbottom {position: absolute; bottom: 0; left: 0; width: 100%;}
+
+
+.backbutton, .nextbutton
+{
+  background-color: #339933; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.questiontext
+{
+
+    font-weight: bold;
+    color: #1487d4;
+    font-family: Book Antiqua,serif;
+}
+
+.questionnumber
+{
+    font-weight: bold;
+    color: #1487d4;
+    font-family: Book Antiqua,serif;
+}

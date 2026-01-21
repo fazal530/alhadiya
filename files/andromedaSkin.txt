@@ -1,0 +1,23 @@
+siteWidth	100%
+bodyBgColor	FFFFFF
+bodyTextColor	333300
+bodyLinkColor	666633
+bodyVlinkColor	999966
+bodyAlinkColor	cccc99
+bodyMarginSize	0
+headDiv	999966,2
+menubarColor	cccc99
+siteNameColor	666633
+menubarDiv	999966,2
+bodyFgColor	ffffff
+formStyle	font-size:9pt;color:000000;background-color:efefcc;
+bodyFgDiv	
+bodyFgToRowDiv	999966,1
+rowColor1	efefcc
+rowColor2	e0e0c0
+rowLinkColor	666633
+rowTextColor	333300
+newFileColor	cc6666
+rowDiv	
+rowToBodyFgDiv	999966,1;ffffff,6
+footDiv	
