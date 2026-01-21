@@ -8,13 +8,7 @@ slick:
 global:
   js:
     js/sliders.js: {}
-    js/counter.js: {}
-    js/theme-toggle.js: {}
-    js/zoom-control.js: {}
-    js/weather.js: {}
-    js/time.js: {}
     js/search.js: {}
-    js/accordion.js: {}
   dependencies:
     - core/drupal
     - core/jquery
