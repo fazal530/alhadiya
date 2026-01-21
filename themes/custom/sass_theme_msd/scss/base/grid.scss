@@ -1,0 +1,15 @@
+.grid,
+%grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+ 
+  @include tablet {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
