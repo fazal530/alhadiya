@@ -1,0 +1,32 @@
+slick:
+  css:
+    component:
+      libs/slick-theme.css: {}
+      libs/slick.css: {}
+  js:
+    libs/slick.min.js: {}
+global:
+  js:
+    js/sliders.js: {}
+    js/counter.js: {}
+    js/theme-toggle.js: {}
+    js/zoom-control.js: {}
+    js/weather.js: {}
+    js/time.js: {}
+    js/search.js: {}
+    js/accordion.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+  css:
+    base:
+      css/style.css: {}
+
+digital_rating_lib:
+  js:
+    js/ratings.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - core/drupalSettings

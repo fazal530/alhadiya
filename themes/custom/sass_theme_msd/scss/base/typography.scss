@@ -1,0 +1,132 @@
+// FONT FAMILIES
+$font_Inter: 'Inter', sans-serif;
+// FONT FAMILIES
+
+.h1,
+h1 {
+  font-family: $font_Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 76px;
+
+  @include tablet {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  @include desktop {
+    font-size: 64px;
+    line-height: 76px;
+  }
+}
+
+.h2,
+h2 {
+  font-family: $font_Inter;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.h3,
+h3 {
+  font-family: $font_Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.h4,
+h4 {
+  font-family: $font_Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  @include desktop {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.h5,
+h5 {
+  font-family: $font_Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @include desktop {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.h6,
+h6 {
+  font-family: $font_Inter;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.body1 {
+  font-family: $font_Inter;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 28px;
+
+}
+
+.body2 {
+  font-family: $font_Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.body3 {
+  font-family: $font_Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}

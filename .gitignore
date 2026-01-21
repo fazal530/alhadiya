@@ -1,3 +1,5 @@
+
+/sites/default/files/
 .ddev/
 .DS_Store
 /vendor/
@@ -6,4 +8,4 @@
 /web/themes/contrib/
 /web/sites/*/settings.php
 /web/themes/custom/sass_theme_msd/css/style.css.map
-/web/themes/custom/sass_theme_msd/css/style.css
+/web/themes/custom/sass_theme_msd/css/style.csssites/default/files/

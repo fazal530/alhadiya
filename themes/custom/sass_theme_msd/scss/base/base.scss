@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+  color: $black;
+  transition: background 0.3s, color 0.3s;
+}
+
+
+.hide-on-mobile {
+  display: none !important;
+
+  @include tablet {
+    display: block !important;
+  }
+
+  @include desktop {
+    display: block !important;
+  }
+}
+
+.hide-on-tablet-n-desktop {
+  display: block !important;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  @include desktop {
+    display: none !important;
+  }
+}
+
+.hide-on-tablet {
+  display: block !important;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  @include desktop {
+    display: block !important;
+  }
+}
+
+.hide-on-tablet-n-moblie {
+  display: none !important;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  @include desktop {
+    display: block !important;
+  }
+}
+
+
+.success-message.message-body {
+  display: none;
+}
+
+
+.hide-this-text {
+  display: none;
+}

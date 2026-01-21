@@ -1,0 +1,29 @@
+.container {
+  padding-inline: 25px !important;
+  margin-inline: auto;
+
+  @include tablet {
+    padding-inline: 50px !important;
+  }
+
+  @include desktop {
+    padding-inline: 80px !important;
+    margin-inline: auto !important;
+    max-width: 1440px;
+  }
+}
+
+.container-2 {
+  padding-inline: 16px !important;
+  margin-inline: auto;
+
+  @include tablet {
+    padding-inline: 25px !important;
+  }
+
+  @include desktop {
+    padding-inline: 32px !important;
+    margin-inline: auto !important;
+    max-width: 1440px;
+  }
+}
