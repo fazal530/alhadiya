@@ -1,0 +1,158 @@
+uuid: 0558b477-ca29-44b6-b5eb-b1026d076115
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - taxonomy.vocabulary.vocabulary_1
+  content:
+    - 'taxonomy_term:vocabulary_1:0763f38c-ac55-489d-a60e-aa5a9a0ba2e0'
+  module:
+    - node
+    - taxonomy
+id: mpya_tangazo
+label: mpya_tangazo
+module: views
+description: Tangazo
+tag: mpya
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Defaults
+    display_plugin: default
+    position: 1
+    display_options:
+      title: 'Kibainisho Muhimu '
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_field: title
+          plugin_id: field
+          label: Title
+          link_to_node: true
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 10
+      access:
+        type: none
+        role: {  }
+        perm: ''
+      sorts:
+        changed:
+          id: changed
+          table: node_field_data
+          field: changed
+          entity_field: changed
+          plugin_id: date
+          order: DESC
+          granularity: second
+          label: Changed
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: null
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            81: 81
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vocabulary_1
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+      query:
+        type: views_query
+        options: {  }
+      use_more: false
+      display_extenders: {  }
+      header_format: '1'
+      footer_format: '1'
+      empty_format: '1'
+      use_pager: null
+      items_per_page: null
+      pager_element: 0
+      offset: null
+      row_plugin: 'entity:node'
+      row_options:
+        teaser: true
+        links: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags: {  }
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
+    position: 2
+    display_options:
+      query:
+        type: views_query
+        options: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags: {  }

@@ -1,0 +1,34 @@
+uuid: 873d0032-5921-4212-9aa6-90360d916797
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.book
+    - node.type.page
+    - node.type.story
+  module:
+    - node
+    - search
+    - system
+id: editors
+label: editors
+weight: 0
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access site reports'
+  - 'access user profiles'
+  - 'administer nodes'
+  - 'bypass node access'
+  - 'create book content'
+  - 'create story content'
+  - 'edit any book content'
+  - 'edit any page content'
+  - 'edit any story content'
+  - 'edit own book content'
+  - 'edit own page content'
+  - 'edit own story content'
+  - 'search content'
+  - 'view the administration theme'

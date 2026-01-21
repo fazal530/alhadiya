@@ -1,0 +1,14 @@
+uuid: 588dfa9b-a129-4907-b784-96347c056a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.view_site_meter
+  module:
+    - user
+id: user_add_role_action.view_site_meter
+label: 'Add the view_site_meter role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: view_site_meter

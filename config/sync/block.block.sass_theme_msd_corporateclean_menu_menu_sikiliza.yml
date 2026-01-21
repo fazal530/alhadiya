@@ -1,0 +1,29 @@
+uuid: 5bda3c9a-0b33-470a-872a-83bd08a25b9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-sikiliza
+  module:
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_corporateclean_menu_menu_sikiliza
+theme: sass_theme_msd
+region: compy_reg
+weight: -22
+provider: null
+plugin: 'system_menu_block:menu-sikiliza'
+settings:
+  id: broken
+  label: Sikiliza
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /homepage

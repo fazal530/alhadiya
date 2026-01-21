@@ -1,0 +1,14 @@
+uuid: bd025133-e2e3-4be5-b1af-d62085c93fab
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.writers
+  module:
+    - user
+id: user_remove_role_action.writers
+label: 'Remove the writers role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: writers

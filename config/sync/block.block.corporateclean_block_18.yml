@@ -1,0 +1,28 @@
+uuid: e5cfe45b-83fe-480c-9c42-5324a51e529d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5ef24860-a764-47d6-8747-ad18e499f5c3'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: corporateclean_block_18
+theme: olivero
+region: content
+weight: -25
+provider: null
+plugin: 'block_content:5ef24860-a764-47d6-8747-ad18e499f5c3'
+settings:
+  id: 'block_content:5ef24860-a764-47d6-8747-ad18e499f5c3'
+  label: 'Tarehe Ya Hijriy'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage_old

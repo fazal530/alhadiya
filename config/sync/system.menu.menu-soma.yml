@@ -1,0 +1,8 @@
+uuid: 1f287cee-15d4-49a2-a0a2-b742bb3d3e2b
+langcode: en
+status: true
+dependencies: {  }
+id: menu-soma
+label: Bonyeza
+description: 'Soma Makala and other articles'
+locked: false

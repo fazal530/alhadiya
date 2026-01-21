@@ -1,0 +1,28 @@
+uuid: 428a2642-0c54-4ca8-b4c1-b5fc9e33a8c0
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:18b103dc-98b9-49d4-8396-927ebe8a10ba'
+  module:
+    - block_content
+    - system
+  theme:
+    - pushbutton
+id: pushbutton_block_2
+theme: pushbutton
+region: ''
+weight: 6
+provider: null
+plugin: 'block_content:18b103dc-98b9-49d4-8396-927ebe8a10ba'
+settings:
+  id: 'block_content:18b103dc-98b9-49d4-8396-927ebe8a10ba'
+  label: 'Pokea Jarida '
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /homepage

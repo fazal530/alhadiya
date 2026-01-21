@@ -1,0 +1,260 @@
+uuid: b1848cb9-f5cb-4d4a-b09d-fcfbafd8ea61
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: mpya_mapishi
+label: mpya_mapishi
+module: views
+description: 'Mpya Mapishi'
+tag: mpya
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Defaults
+    display_plugin: default
+    position: 1
+    display_options:
+      title: 'Mapishi Mpya'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_field: title
+          plugin_id: field
+          label: Title
+          link_to_node: true
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: term_node_tid
+          entity_field: name
+          plugin_id: term_name
+          label: Name
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 10
+      access:
+        type: none
+        role: {  }
+        perm: ''
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          granularity: second
+          label: 'Authored on'
+      filters:
+        tid:
+          id: tid
+          table: node_tid
+          field: tid
+          relationship: none
+          plugin_id: bundle
+          operator: or
+          value:
+            4: '4'
+            16: '16'
+            44: '44'
+            83: '83'
+            106: '106'
+            43: '43'
+            85: '85'
+            108: '108'
+            105: '105'
+            187: '187'
+            84: '84'
+            186: '186'
+            74: '74'
+            183: '183'
+            146: '146'
+            73: '73'
+            46: '46'
+            185: '185'
+            107: '107'
+          group: 0
+          exposed: false
+          expose:
+            label: ''
+            operator: ''
+            remember_roles: {  }
+          type: select
+          limit: true
+          vid: '1'
+          hierarchy: 1
+          reduce_duplicates: 0
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: null
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+      row:
+        type: fields
+        options:
+          relationship: null
+          view_mode: null
+      query:
+        type: views_query
+        options: {  }
+      relationships:
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
+          entity_type: node
+      use_more: false
+      display_extenders: {  }
+      header_format: '3'
+      footer_format: '1'
+      empty_format: '1'
+      use_pager: null
+      items_per_page: null
+      pager_element: 0
+      offset: null
+      style_plugin: default
+      style_options:
+        type: ul
+      row_plugin: fields
+      row_options:
+        inline:
+          title: title
+          name: name
+        separator: '--'
+        hide_empty: 0
+      header_empty: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags: {  }
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 7
+      filters:
+        tid:
+          id: tid
+          table: node_tid
+          field: tid
+          relationship: none
+          plugin_id: bundle
+          operator: or
+          value:
+            4: '4'
+            16: '16'
+            44: '44'
+            83: '83'
+            106: '106'
+            43: '43'
+            85: '85'
+            108: '108'
+            105: '105'
+            187: '187'
+            84: '84'
+            186: '186'
+            74: '74'
+            183: '183'
+            146: '146'
+            73: '73'
+            46: '46'
+            185: '185'
+            107: '107'
+          group: 0
+          exposed: false
+          expose:
+            label: ''
+            operator: ''
+            remember_roles: {  }
+          type: select
+          limit: true
+          vid: '1'
+          hierarchy: 1
+          override:
+            button: 'Use default'
+          reduce_duplicates: 0
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: null
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      query:
+        type: views_query
+        options: {  }
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+        footer: false
+        header_format: false
+        header_empty: false
+        items_per_page: false
+        offset: false
+        use_pager: false
+        pager_element: false
+        footer_format: false
+        footer_empty: false
+      display_extenders: {  }
+      header_format: '3'
+      header_empty: 0
+      items_per_page: null
+      offset: null
+      use_pager: null
+      pager_element: 0
+      footer_format: '3'
+      footer_empty: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags: {  }
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 3
+    display_options:
+      query:
+        type: views_query
+        options: {  }
+      display_extenders: {  }
+      path: mpya_mapishi
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags: {  }

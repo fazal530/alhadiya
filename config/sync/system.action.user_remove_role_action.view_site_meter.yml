@@ -1,0 +1,14 @@
+uuid: 26a0976f-9d59-4cf1-ac65-4859b032390a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.view_site_meter
+  module:
+    - user
+id: user_remove_role_action.view_site_meter
+label: 'Remove the view_site_meter role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: view_site_meter

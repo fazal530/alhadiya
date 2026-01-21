@@ -1,0 +1,25 @@
+uuid: 58f23586-862d-4392-881e-e0ed16c8d2ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: corporateclean_user_login
+theme: olivero
+region: content
+weight: -19
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage

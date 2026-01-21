@@ -1,0 +1,22 @@
+uuid: a896a651-e501-465b-8f5f-0c83dde7b733
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sass_theme_msd
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: sass_theme_msd_breadcrumbs
+theme: sass_theme_msd
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

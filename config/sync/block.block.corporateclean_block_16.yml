@@ -1,0 +1,23 @@
+uuid: f1d76013-4a46-4fc2-80fa-c22091996c39
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b5e59b9b-e7e4-4a87-95ec-22fda6534634'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: corporateclean_block_16
+theme: olivero
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:b5e59b9b-e7e4-4a87-95ec-22fda6534634'
+settings:
+  id: 'block_content:b5e59b9b-e7e4-4a87-95ec-22fda6534634'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

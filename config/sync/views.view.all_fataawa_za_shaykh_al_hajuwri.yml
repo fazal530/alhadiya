@@ -1,0 +1,157 @@
+uuid: 878ef521-adb1-4bdb-a0de-e6efb8b7f153
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: all_fataawa_za_shaykh_al_hajuwri
+label: all_fataawa_za_shaykh_al_hajuwri
+module: views
+description: 'All Fataawa Za Shaykh Yahya Al-Hajuwriy TOB'
+tag: fatawaa
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Defaults
+    display_plugin: default
+    position: 1
+    display_options:
+      title: 'Fataawa Za Shaykh Yahya Al-Hajuwriy'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_field: title
+          plugin_id: field
+          label: Title
+          link_to_node: true
+      access:
+        type: none
+        role: {  }
+        perm: ''
+      cache:
+        type: none
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          granularity: second
+          label: 'Authored on'
+      filters:
+        tid:
+          id: tid
+          table: node_tid
+          field: tid
+          relationship: none
+          plugin_id: bundle
+          operator: or
+          value:
+            210: '210'
+          group: 0
+          exposed: false
+          expose:
+            label: ''
+            operator: ''
+            remember_roles: {  }
+          type: select
+          limit: true
+          vid: '1'
+          reduce_duplicates: 0
+          hierarchy: 1
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          relationship: none
+          entity_type: null
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 0
+          exposed: false
+          expose:
+            label: ''
+            operator: ''
+            remember_roles: {  }
+      row:
+        type: fields
+        options:
+          relationship: null
+          view_mode: null
+      defaults:
+        access: false
+        cache: false
+        title: false
+        fields: false
+        sorts: false
+        filters: false
+        items_per_page: false
+        offset: false
+        use_pager: false
+        pager_element: false
+        style_plugin: false
+        style_options: false
+        row_plugin: false
+        row_options: false
+      display_extenders: {  }
+      header_format: '1'
+      footer_format: '1'
+      empty_format: '1'
+      items_per_page: '30'
+      offset: 0
+      use_pager: '1'
+      pager_element: 0
+      style_plugin: table
+      style_options:
+        columns: {  }
+        default: ''
+        info: {  }
+        override: false
+        order: asc
+      row_plugin: fields
+      row_options: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags: {  }
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: fataawa_za_shaykh_yahya_al_hajuwriy
+      menu:
+        type: none
+        title: ''
+        description: ''
+        weight: 0
+        menu_name: tools
+        name: tools
+      tab_options:
+        type: none
+        title: ''
+        description: ''
+        weight: 0
+        name: navigation
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags: {  }

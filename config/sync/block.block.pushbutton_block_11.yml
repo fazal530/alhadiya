@@ -1,0 +1,23 @@
+uuid: d8f6f608-7898-443e-a449-d4eeb325314f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:964558e1-888d-4721-a90b-8388c0e8ce24'
+  module:
+    - block_content
+  theme:
+    - pushbutton
+id: pushbutton_block_11
+theme: pushbutton
+region: ''
+weight: -8
+provider: null
+plugin: 'block_content:964558e1-888d-4721-a90b-8388c0e8ce24'
+settings:
+  id: 'block_content:964558e1-888d-4721-a90b-8388c0e8ce24'
+  label: 'Tarjama Ya Maana Ya Qur-aan (Translation Of The Meaning Of Al-Qur-aan)'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

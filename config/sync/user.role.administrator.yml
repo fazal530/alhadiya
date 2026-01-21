@@ -1,0 +1,75 @@
+uuid: 299a3edb-5ae4-484d-a716-3ba2437c04d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.book
+    - node.type.page
+    - node.type.story
+  module:
+    - block
+    - comment
+    - filter
+    - node
+    - path
+    - search
+    - system
+    - taxonomy
+    - toolbar
+    - views_ui
+_core:
+  default_config_hash: OeKGIkmZA_c-t6QLH81WNQx8gDCc1MRmxaTuQgxBByU
+id: administrator
+label: administrator
+weight: 0
+is_admin: true
+permissions:
+  - 'access administration pages'
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer actions'
+  - 'administer blocks'
+  - 'administer comments'
+  - 'administer content types'
+  - 'administer filters'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer permissions'
+  - 'administer search'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer taxonomy'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'administer views'
+  - 'bypass node access'
+  - 'change own username'
+  - 'create book content'
+  - 'create page content'
+  - 'create story content'
+  - 'create url aliases'
+  - 'delete any book content'
+  - 'delete any page content'
+  - 'delete any story content'
+  - 'delete own book content'
+  - 'delete own page content'
+  - 'delete own story content'
+  - 'edit any book content'
+  - 'edit any page content'
+  - 'edit any story content'
+  - 'edit own book content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit own story content'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use advanced search'
+  - 'view the administration theme'

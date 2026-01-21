@@ -1,0 +1,42 @@
+uuid: b13b4935-c39f-4f06-b7a0-310f71c26594
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.book
+    - node.type.page
+    - node.type.story
+  module:
+    - block
+    - node
+    - search
+    - system
+    - views_ui
+id: mini_admin
+label: 'mini admin'
+weight: 0
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access site reports'
+  - 'access user profiles'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer users'
+  - 'administer views'
+  - 'bypass node access'
+  - 'create book content'
+  - 'create page content'
+  - 'create story content'
+  - 'edit any book content'
+  - 'edit any page content'
+  - 'edit any story content'
+  - 'edit own book content'
+  - 'edit own page content'
+  - 'edit own story content'
+  - 'search content'
+  - 'use advanced search'
+  - 'view the administration theme'

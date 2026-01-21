@@ -1,0 +1,25 @@
+uuid: 64537fd2-df73-40cf-8c42-e5c314848754
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-soma
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_bonyeza
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-soma'
+settings:
+  id: 'system_menu_block:menu-soma'
+  label: Soma
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 87cd27ef-37ab-4002-8627-848e4b6197fd
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bluebreeze
+id: bluebreeze_menu_menu_soma
+theme: bluebreeze
+region: ''
+weight: -9
+provider: null
+plugin: 'system_menu_block:menu-soma'
+settings:
+  id: broken
+  label: Soma
+  label_display: visible
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /homepage

@@ -1,0 +1,99 @@
+uuid: de03bf90-f443-4a42-8a74-84a707f2c5f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+  module:
+    - node
+id: mpya_asbaabul
+label: mpya_asbaabul
+module: views
+description: Asbaabun-Nuzuul
+tag: mpya
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Defaults
+    display_plugin: default
+    position: 1
+    display_options:
+      title: Asbaabun-Nuzuul
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_field: title
+          plugin_id: field
+          label: Title
+          link_to_node: true
+      access:
+        type: none
+        role: {  }
+        perm: ''
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          granularity: second
+          label: 'Authored on'
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: null
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+      use_more: false
+      display_extenders: {  }
+      header_format: '1'
+      footer_format: '1'
+      empty_format: '1'
+      use_pager: false
+      items_per_page: '1'
+      pager_element: 0
+      offset: 0
+      row_plugin: 'entity:node'
+      row_options:
+        teaser: true
+        links: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags: {  }
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags: {  }
