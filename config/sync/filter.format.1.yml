@@ -1,0 +1,29 @@
+uuid: 0fafcf82-42e6-44ad-a91b-7588062fedf7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Filtered HTML'
+format: '1'
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 2
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: 1
+    settings:
+      allowed_html: '<em> <strong> <ul type> <ol start type> <li> <p>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }

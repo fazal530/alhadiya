@@ -1,0 +1,25 @@
+uuid: e7814ae2-6aaa-4ce5-a7e3-135cd108e96d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-soma
+  module:
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_bonyeza
+theme: sass_theme_msd
+region: compy_reg
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-soma'
+settings:
+  id: 'system_menu_block:menu-soma'
+  label: Soma
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: true
+visibility: {  }

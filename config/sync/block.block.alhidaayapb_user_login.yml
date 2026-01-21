@@ -1,0 +1,25 @@
+uuid: ba10564c-f661-48d6-a35c-a5ad18099a6f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - alhidaayapb
+id: alhidaayapb_user_login
+theme: alhidaayapb
+region: ''
+weight: -14
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage

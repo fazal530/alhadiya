@@ -1,0 +1,323 @@
+uuid: 5b775c33-fc9a-498c-9ef6-66f188e7fb03
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vocabulary_1
+  content:
+    - 'taxonomy_term:vocabulary_1:4686d05a-fcaa-469c-9d2c-e2715fba651e'
+  module:
+    - node
+    - taxonomy
+id: mpya_fataawa_ulamaa
+label: mpya_fataawa_ulamaa
+module: views
+description: "Fataawa Za 'Ulamaa ( this is only for fatwa ulama does not display the taxamony (original side by side with khawli)"
+tag: mpya
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Defaults
+    display_plugin: default
+    position: 1
+    display_options:
+      title: "Fataawa Za 'Ulamaa"
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          link_to_node: true
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 5
+      access:
+        type: none
+        role: {  }
+        perm: ''
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          granularity: second
+          label: 'Authored on'
+      filters:
+        tid:
+          id: tid
+          table: node_tid
+          field: tid
+          relationship: none
+          plugin_id: bundle
+          operator: or
+          value:
+            4: '4'
+            16: '16'
+            44: '44'
+            83: '83'
+            106: '106'
+            43: '43'
+            85: '85'
+            108: '108'
+            105: '105'
+            187: '187'
+            84: '84'
+            186: '186'
+            74: '74'
+            183: '183'
+            146: '146'
+            73: '73'
+            46: '46'
+            185: '185'
+            107: '107'
+          group: 0
+          exposed: false
+          expose:
+            label: ''
+            operator: ''
+            remember_roles: {  }
+          type: select
+          limit: true
+          vid: '1'
+          hierarchy: 1
+          reduce_duplicates: 0
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: null
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 1
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
+      row:
+        type: fields
+        options:
+          relationship: null
+          view_mode: null
+      query:
+        type: views_query
+        options: {  }
+      relationships:
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
+          entity_type: node
+      use_more: false
+      display_extenders: {  }
+      header_format: '3'
+      footer_format: '1'
+      empty_format: '1'
+      use_pager: null
+      items_per_page: null
+      pager_element: 0
+      offset: null
+      style_plugin: grid
+      style_options:
+        grouping: {  }
+        row_class: ''
+        default_row_class: 1
+        row_class_special: 1
+        columns: '1'
+        alignment: vertical
+        fill_single_line: 1
+        caption: ''
+        summary: ''
+      row_plugin: fields
+      row_options:
+        inline:
+          title: title
+          name: name
+        separator: '--'
+        hide_empty: 0
+      header_empty: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags: {  }
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 7
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: null
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            93: 93
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vocabulary_1
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      query:
+        type: views_query
+        options: {  }
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+        footer: false
+        header_format: false
+        header_empty: false
+        items_per_page: false
+        offset: false
+        use_pager: false
+        pager_element: false
+        footer_format: false
+        footer_empty: false
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      header_format: '3'
+      header_empty: 0
+      items_per_page: null
+      offset: null
+      use_pager: null
+      pager_element: 0
+      footer_format: '3'
+      footer_empty: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags: {  }

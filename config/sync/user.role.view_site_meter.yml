@@ -1,0 +1,9 @@
+uuid: 482e1a76-88b2-4887-9e00-8d244a3ceafd
+langcode: en
+status: true
+dependencies: {  }
+id: view_site_meter
+label: view_site_meter
+weight: 1
+is_admin: false
+permissions: {  }

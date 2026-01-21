@@ -1,0 +1,181 @@
+uuid: 90593275-80b2-4e1d-9d8f-07b27d112eaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: _reference_notes_for_admin
+label: _reference_notes_for_admin
+module: views
+description: _reference_notes_for_admin
+tag: mpya
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Defaults
+    display_plugin: default
+    position: 1
+    display_options:
+      title: _reference_notes_for_admin
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_field: title
+          plugin_id: field
+          label: Title
+          link_to_node: true
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 30
+      access:
+        type: none
+        role: {  }
+        perm: ''
+      cache:
+        type: none
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          granularity: second
+          label: 'Authored on'
+      filters:
+        tid:
+          id: tid
+          table: node_tid
+          field: tid
+          relationship: none
+          group_type: group
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            268: 268
+          group: 0
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            operator_label: ''
+            limit_operators: false
+            available_operators: {  }
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vocabulary_1
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
+          ui_name: ''
+          optgroups: 0
+      row:
+        type: fields
+        options:
+          relationship: null
+          view_mode: null
+      query:
+        type: views_query
+        options: {  }
+      defaults:
+        access: false
+        cache: false
+        title: false
+        fields: false
+        sorts: false
+        filters: false
+        items_per_page: false
+        offset: false
+        use_pager: false
+        pager_element: false
+        style_plugin: false
+        style_options: false
+        row_plugin: false
+        row_options: false
+      display_extenders: {  }
+      header_format: '1'
+      footer_format: '1'
+      empty_format: '1'
+      items_per_page: null
+      offset: null
+      use_pager: null
+      pager_element: 0
+      style_plugin: table
+      style_options:
+        columns: {  }
+        default: ''
+        info: {  }
+        override: false
+        order: asc
+      row_plugin: fields
+      row_options: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags: {  }
+  _reference_notes_for_admin:
+    id: _reference_notes_for_admin
+    display_title: Reference_notes_for_admin
+    display_plugin: page
+    position: 2
+    display_options:
+      query:
+        type: views_query
+        options: {  }
+      display_description: ''
+      display_extenders: {  }
+      path: _reference_notes_for_admin
+      menu:
+        type: none
+        title: ''
+        description: ''
+        weight: 0
+        menu_name: tools
+        name: tools
+      tab_options:
+        type: none
+        title: ''
+        description: ''
+        weight: 0
+        name: navigation
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags: {  }

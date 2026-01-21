@@ -1,0 +1,28 @@
+uuid: 403fcc3d-c3c0-4e23-8af5-835c014aeda1
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e16b9a8d-8383-44a3-a127-c35ae5dbf44d'
+  module:
+    - block_content
+    - system
+  theme:
+    - pushbutton
+id: pushbutton_block_14
+theme: pushbutton
+region: ''
+weight: 5
+provider: null
+plugin: 'block_content:e16b9a8d-8383-44a3-a127-c35ae5dbf44d'
+settings:
+  id: 'block_content:e16b9a8d-8383-44a3-a127-c35ae5dbf44d'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact

@@ -1,0 +1,23 @@
+uuid: 60f82042-3c39-4a01-b579-7c7883c2fbbf
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b5e59b9b-e7e4-4a87-95ec-22fda6534634'
+  module:
+    - block_content
+  theme:
+    - garland
+id: garland_block_16
+theme: garland
+region: ''
+weight: -10
+provider: null
+plugin: 'block_content:b5e59b9b-e7e4-4a87-95ec-22fda6534634'
+settings:
+  id: 'block_content:b5e59b9b-e7e4-4a87-95ec-22fda6534634'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

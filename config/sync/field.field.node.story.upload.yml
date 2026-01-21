@@ -1,0 +1,27 @@
+uuid: ef72bdfc-2fbb-4658-8cba-91d4088323e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.upload
+    - node.type.story
+  module:
+    - file
+id: node.story.upload
+field_name: upload
+entity_type: node
+bundle: story
+label: 'File attachments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'jpg jpeg gif png txt html doc xls pdf ppt pps avi mpeg mpg mov rm flv wmv 3gp mp4 dir dcr ogg'
+  max_filesize: '100 MB'
+  description_field: true
+field_type: file

@@ -1,0 +1,9 @@
+uuid: 46fa91f6-bcae-4166-93e5-41413651734e
+langcode: en
+status: true
+dependencies: {  }
+name: Content
+vid: vocabulary_1
+description: Content
+weight: 0
+new_revision: false

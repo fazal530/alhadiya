@@ -1,0 +1,16 @@
+uuid: eaaca67c-accd-4f05-8a9f-90aad9f5c554
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.story
+  module:
+    - node
+id: writers
+label: writers
+weight: 2
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'create story content'
+  - 'edit own story content'

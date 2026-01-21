@@ -1,0 +1,23 @@
+uuid: a888182c-1c7f-4fd8-9186-b9be5ca13ccc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:da5d9291-4e06-4167-92de-7f4ea3badccc'
+  module:
+    - block_content
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_corporateclean_block_19
+theme: sass_theme_msd
+region: compy_reg
+weight: -23
+provider: null
+plugin: 'block_content:da5d9291-4e06-4167-92de-7f4ea3badccc'
+settings:
+  id: 'block_content:da5d9291-4e06-4167-92de-7f4ea3badccc'
+  label: Visitors
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,336 @@
+uuid: 206e8f5d-d542-4a22-b5e6-e8f09722a105
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vocabulary_1
+  content:
+    - 'taxonomy_term:vocabulary_1:38468677-8ab9-40e0-bc8c-ff4c3b16224e'
+    - 'taxonomy_term:vocabulary_1:416d2f6b-2fc8-4dc1-b7ae-0efcbd698475'
+    - 'taxonomy_term:vocabulary_1:47ec749b-f989-46b0-a4b2-549d12632376'
+    - 'taxonomy_term:vocabulary_1:54802998-820f-4b8e-b051-879d68e8ad67'
+    - 'taxonomy_term:vocabulary_1:582e74be-5c85-48f6-9c11-9bd3493716f2'
+    - 'taxonomy_term:vocabulary_1:6f3f7b44-4466-411d-b919-57bd61f864bd'
+    - 'taxonomy_term:vocabulary_1:72010f52-4e87-4cb3-8b29-45f66ad5c403'
+    - 'taxonomy_term:vocabulary_1:80028f68-4b58-44c8-9938-37045aa1fd14'
+    - 'taxonomy_term:vocabulary_1:8408ba53-cbfe-4b4a-baa1-9af2d3a273fc'
+    - 'taxonomy_term:vocabulary_1:89555e11-5718-4ad1-9efd-9bc6a334f46e'
+    - 'taxonomy_term:vocabulary_1:aee074f1-1cf5-42ac-9917-2f6e3ff4ac80'
+    - 'taxonomy_term:vocabulary_1:b3d38a2f-f5eb-4135-ac16-2a8b9122e0c0'
+    - 'taxonomy_term:vocabulary_1:b3f6f60a-b5e9-413d-815b-8147e4e01988'
+    - 'taxonomy_term:vocabulary_1:baeb240a-7916-4fec-9625-bc4b61475db0'
+    - 'taxonomy_term:vocabulary_1:dd03211e-d93a-46cd-84c0-71ce8248c521'
+    - 'taxonomy_term:vocabulary_1:e8e9957c-cc8a-47e9-bec2-a03e2d68c149'
+    - 'taxonomy_term:vocabulary_1:ebc37151-6c8b-4aef-be0f-6d0c0cc14a21'
+    - 'taxonomy_term:vocabulary_1:f2fbf0d6-84d3-4bea-bef7-c79f823dda03'
+  module:
+    - node
+    - taxonomy
+id: all_mapishi
+label: all_mapishi
+module: views
+description: 'All Mapishi TOB'
+tag: mapishi
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Defaults
+    display_plugin: default
+    position: 1
+    display_options:
+      title: 'Alhidaaya Mapishi'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          link_to_node: true
+      pager:
+        type: full
+        options:
+          offset: null
+          pagination_heading_level: h4
+          items_per_page: 50
+          total_pages: 9
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      access:
+        type: none
+        role: {  }
+        perm: ''
+      cache:
+        type: none
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          granularity: minute
+          override:
+            button: Override
+          label: 'Authored on'
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: null
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            16: 16
+            44: 44
+            83: 83
+            4: 4
+            106: 106
+            43: 43
+            85: 85
+            108: 108
+            105: 105
+            84: 84
+            186: 186
+            74: 74
+            183: 183
+            146: 146
+            73: 73
+            46: 46
+            185: 185
+            107: 107
+          group: 1
+          exposed: false
+          expose:
+            operator_id: tid_op
+            label: 'Has taxonomy term'
+            description: ''
+            use_operator: false
+            operator: tid_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: tid
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vocabulary_1
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      row:
+        type: fields
+        options:
+          relationship: null
+          view_mode: null
+      defaults:
+        access: false
+        cache: false
+        title: false
+        fields: false
+        sorts: false
+        filters: false
+        items_per_page: false
+        offset: false
+        use_pager: false
+        pager_element: false
+        style_plugin: false
+        style_options: false
+        row_plugin: false
+        row_options: false
+      display_extenders: {  }
+      header_format: '1'
+      footer_format: '1'
+      empty_format: '1'
+      items_per_page: 50
+      offset: 0
+      use_pager: '1'
+      pager_element: 0
+      style_plugin: table
+      style_options:
+        grouping: ''
+        override: 1
+        sticky: 0
+        order: asc
+        summary: ''
+        columns:
+          title: title
+        info:
+          title:
+            sortable: 0
+            separator: ''
+        default: '-1'
+      row_plugin: fields
+      row_options: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags: {  }
+  feed_1:
+    id: feed_1
+    display_title: Feed
+    display_plugin: feed
+    position: 3
+    display_options:
+      row:
+        type: node_rss
+        options:
+          relationship: none
+          view_mode: fulltext
+      display_extenders: {  }
+      path: all_mapishi/feed
+      displays:
+        page_1: page_1
+        default: '0'
+      style_options:
+        mission_description: 0
+        description: 'Alhidaaya Mapishi'
+      row_plugin: node_rss
+      row_options:
+        relationship: none
+        item_length: fulltext
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags: {  }
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: all_mapishi
+      menu:
+        type: none
+        title: ''
+        description: ''
+        weight: 0
+        menu_name: tools
+        name: tools
+      tab_options:
+        type: none
+        title: ''
+        description: ''
+        weight: 0
+        name: navigation
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags: {  }

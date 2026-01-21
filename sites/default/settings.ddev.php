@@ -45,9 +45,11 @@ $settings["hash_salt"] = "80a289145bffa7ea48f19a6162238621eec1eb2eeea90267689f9f
 $settings["skip_permissions_hardening"] = TRUE;
 $settings["trusted_host_patterns"] = [".*"];
 
-if (empty($settings["config_sync_directory"])) {
-  $settings["config_sync_directory"] = "sites/default/files/sync";
+if (empty($settings['config_sync_directory'])) {
+    $settings['config_sync_directory'] = DRUPAL_ROOT . '/config/sync';
 }
+
+
 
 $config["symfony_mailer.settings"]["default_transport"] = "sendmail";
 $config["system.logging"]["error_level"] = "verbose";

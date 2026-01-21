@@ -1,0 +1,28 @@
+uuid: e9a3d8ca-7054-4be8-8fa0-4180003bd07f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:5e948ab9-3a5e-4971-abe2-1bab13d7b98d'
+  module:
+    - block_content
+    - system
+  theme:
+    - garland
+id: garland_block_17
+theme: garland
+region: ''
+weight: 0
+provider: null
+plugin: 'block_content:5e948ab9-3a5e-4971-abe2-1bab13d7b98d'
+settings:
+  id: 'block_content:5e948ab9-3a5e-4971-abe2-1bab13d7b98d'
+  label: 'Alhidaaya App'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage

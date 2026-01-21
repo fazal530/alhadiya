@@ -1,0 +1,20 @@
+uuid: 47da1027-e845-41b9-a893-e9b803195ca2
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - pushbutton
+id: pushbutton_system_main
+theme: pushbutton
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: 99ebd458-96c0-468b-adf1-ea2569fec3f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mini_admin
+  module:
+    - user
+id: user_remove_role_action.mini_admin
+label: 'Remove the mini admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mini_admin

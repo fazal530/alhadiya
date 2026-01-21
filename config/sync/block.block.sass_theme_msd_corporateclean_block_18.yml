@@ -1,0 +1,28 @@
+uuid: c47dd35e-6c8c-4829-8052-9ea62dd44b77
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5ef24860-a764-47d6-8747-ad18e499f5c3'
+  module:
+    - block_content
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_corporateclean_block_18
+theme: sass_theme_msd
+region: content
+weight: -25
+provider: null
+plugin: 'block_content:5ef24860-a764-47d6-8747-ad18e499f5c3'
+settings:
+  id: 'block_content:5ef24860-a764-47d6-8747-ad18e499f5c3'
+  label: 'Tarehe Ya Hijriy'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage_old

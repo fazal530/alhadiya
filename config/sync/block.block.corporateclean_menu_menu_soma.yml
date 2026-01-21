@@ -1,0 +1,29 @@
+uuid: 9c6722be-a3c1-471b-8d8b-aaa26aa092e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-soma
+  module:
+    - system
+  theme:
+    - olivero
+id: corporateclean_menu_menu_soma
+theme: olivero
+region: sidebar
+weight: -24
+provider: null
+plugin: 'system_menu_block:menu-soma'
+settings:
+  id: broken
+  label: Soma
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

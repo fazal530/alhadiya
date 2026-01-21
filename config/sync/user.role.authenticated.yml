@@ -1,0 +1,18 @@
+uuid: 8dc7d135-24d0-4415-a85e-88666e1ab927
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - search
+    - system
+_core:
+  default_config_hash: hcfESiA8tr3D1muRk2KF7tbcun16ZJlG1R5SzKGed6g
+id: authenticated
+label: 'authenticated user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'view own unpublished content'

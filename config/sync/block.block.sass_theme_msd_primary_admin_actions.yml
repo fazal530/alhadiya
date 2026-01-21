@@ -1,0 +1,20 @@
+uuid: 3ccc22a9-8ed8-4ea0-ba6b-a8114b085695
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sass_theme_msd
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: sass_theme_msd_primary_admin_actions
+theme: sass_theme_msd
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 1ef170ed-83de-44ec-b502-99d057e33296
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - bluebreeze
+id: bluebreeze_user_login
+theme: bluebreeze
+region: ''
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage

@@ -1,0 +1,8 @@
+uuid: a5109bdd-c304-46b7-a0b4-a1c374617b74
+langcode: en
+status: true
+dependencies: {  }
+id: menu-sikiliza
+label: Sikiliza
+description: 'Sikliza Mawaidha and Quraan'
+locked: false

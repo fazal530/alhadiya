@@ -1,0 +1,29 @@
+uuid: ae529ffa-6380-4771-953e-b43ec69cc1dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-sikiliza
+  module:
+    - system
+  theme:
+    - olivero
+id: corporateclean_menu_menu_sikiliza
+theme: olivero
+region: sidebar
+weight: -22
+provider: null
+plugin: 'system_menu_block:menu-sikiliza'
+settings:
+  id: broken
+  label: Sikiliza
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /homepage
