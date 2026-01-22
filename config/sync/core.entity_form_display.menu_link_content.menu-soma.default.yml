@@ -1,0 +1,40 @@
+uuid: fa5c1633-108f-4975-878f-160fac856b30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.menu-soma.field_icon
+    - image.style.thumbnail
+    - system.menu.menu-soma
+  module:
+    - link
+    - menu_item_extras
+    - svg_image
+id: menu_link_content.menu-soma.default
+targetEntityType: menu_link_content
+bundle: menu-soma
+mode: default
+content:
+  field_icon:
+    type: image_image
+    weight: 21
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -10,8 +10,8 @@ dependencies:
     - sass_theme_msd
 id: sass_theme_msd_corporateclean_block_19
 theme: sass_theme_msd
-region: compy_reg
-weight: -23
+region: header
+weight: -11
 provider: null
 plugin: 'block_content:da5d9291-4e06-4167-92de-7f4ea3badccc'
 settings:

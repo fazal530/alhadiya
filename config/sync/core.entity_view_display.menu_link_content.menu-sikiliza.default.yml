@@ -1,0 +1,35 @@
+uuid: 1b152d1b-fe96-49dd-94db-61746ef47000
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.menu-sikiliza.field_icon
+    - system.menu.menu-sikiliza
+  module:
+    - svg_image
+id: menu_link_content.menu-sikiliza.default
+targetEntityType: menu_link_content
+bundle: menu-sikiliza
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
