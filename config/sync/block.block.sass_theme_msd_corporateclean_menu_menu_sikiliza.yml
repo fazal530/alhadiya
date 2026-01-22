@@ -10,8 +10,8 @@ dependencies:
     - sass_theme_msd
 id: sass_theme_msd_corporateclean_menu_menu_sikiliza
 theme: sass_theme_msd
-region: compy_reg
-weight: -22
+region: content
+weight: -10
 provider: null
 plugin: 'system_menu_block:menu-sikiliza'
 settings:

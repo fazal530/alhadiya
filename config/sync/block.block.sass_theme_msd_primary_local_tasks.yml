@@ -1,6 +1,6 @@
 uuid: 03e0ebc4-544a-4e58-9d32-5c924db05271
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - sass_theme_msd
@@ -8,8 +8,8 @@ _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
 id: sass_theme_msd_primary_local_tasks
 theme: sass_theme_msd
-region: highlighted
-weight: -4
+region: header_top
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:

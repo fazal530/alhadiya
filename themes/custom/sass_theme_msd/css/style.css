@@ -451,4 +451,9 @@ body {
   display: none;
 }
 
+.layout-main {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */

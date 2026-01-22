@@ -12,7 +12,7 @@ dependencies:
 id: sass_theme_msd_corporateclean_block_18
 theme: sass_theme_msd
 region: content
-weight: -25
+weight: -9
 provider: null
 plugin: 'block_content:5ef24860-a764-47d6-8747-ad18e499f5c3'
 settings:

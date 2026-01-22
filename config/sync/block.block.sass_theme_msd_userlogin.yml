@@ -1,0 +1,20 @@
+uuid: cdb7f9ac-091f-423a-9054-b81713925b09
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_userlogin
+theme: sass_theme_msd
+region: header_top
+weight: -9
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  label_display: '0'
+  provider: user
+visibility: {  }

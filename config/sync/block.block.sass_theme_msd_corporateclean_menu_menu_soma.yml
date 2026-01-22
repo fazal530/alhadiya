@@ -1,6 +1,6 @@
 uuid: e408b8a0-df0f-4466-93bc-f32829f48da2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.menu-soma
@@ -10,8 +10,8 @@ dependencies:
     - sass_theme_msd
 id: sass_theme_msd_corporateclean_menu_menu_soma
 theme: sass_theme_msd
-region: compy_reg
-weight: -24
+region: header_top
+weight: -5
 provider: null
 plugin: 'system_menu_block:menu-soma'
 settings:

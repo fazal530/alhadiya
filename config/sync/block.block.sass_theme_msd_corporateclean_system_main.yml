@@ -11,7 +11,7 @@ _core:
 id: sass_theme_msd_corporateclean_system_main
 theme: sass_theme_msd
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: system_main_block
 settings:
