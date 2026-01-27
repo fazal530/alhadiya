@@ -1,0 +1,8 @@
+services:
+  global_prayer_times.location_api:
+    class: Drupal\global_prayer_times\Service\LocationApi
+    arguments: ['@http_client']
+
+  global_prayer_times.prayer_api:
+    class: Drupal\global_prayer_times\Service\PrayerTimesApi
+    arguments: ['@http_client']

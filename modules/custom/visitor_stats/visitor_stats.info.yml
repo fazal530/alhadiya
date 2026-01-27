@@ -1,0 +1,5 @@
+name: Visitor Stats
+type: module
+description: Show visitors today, total visits and online users
+core_version_requirement: ^9 || ^10 || ^11
+package: Custom

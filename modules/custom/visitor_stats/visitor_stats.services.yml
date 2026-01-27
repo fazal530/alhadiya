@@ -1,0 +1,5 @@
+services:
+  visitor_stats.subscriber:
+    class: Drupal\visitor_stats\EventSubscriber\VisitorSubscriber
+    tags:
+      - { name: event_subscriber }
