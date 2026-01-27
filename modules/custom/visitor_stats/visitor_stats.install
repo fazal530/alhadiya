@@ -1,0 +1,21 @@
+<?php
+
+function visitor_stats_schema() {
+  $schema['visitor_stats'] = [
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'ip' => [
+        'type' => 'varchar',
+        'length' => 45,
+      ],
+      'created' => [
+        'type' => 'int',
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}
