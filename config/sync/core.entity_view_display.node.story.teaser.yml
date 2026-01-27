@@ -30,6 +30,11 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
+  sharethis:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
   taxonomy_vocabulary_1:
     type: entity_reference_label
     label: hidden
@@ -40,4 +45,5 @@ content:
     region: content
 hidden:
   comment_node_story: true
+  langcode: true
   upload: true

@@ -17,7 +17,7 @@ plugin: 'system_menu_block:left-sidebar-menu'
 settings:
   id: 'system_menu_block:left-sidebar-menu'
   label: 'left sidebar menu'
-  label_display: visible
+  label_display: '0'
   provider: system
   level: 1
   depth: null

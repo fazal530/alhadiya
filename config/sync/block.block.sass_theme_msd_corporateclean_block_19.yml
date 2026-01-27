@@ -10,14 +10,14 @@ dependencies:
     - sass_theme_msd
 id: sass_theme_msd_corporateclean_block_19
 theme: sass_theme_msd
-region: header
-weight: -11
+region: menubar
+weight: -6
 provider: null
 plugin: 'block_content:da5d9291-4e06-4167-92de-7f4ea3badccc'
 settings:
   id: 'block_content:da5d9291-4e06-4167-92de-7f4ea3badccc'
   label: Visitors
-  label_display: visible
+  label_display: '0'
   provider: block_content
   view_mode: full
 visibility: {  }

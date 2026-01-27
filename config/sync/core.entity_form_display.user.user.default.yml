@@ -6,7 +6,7 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - image
+    - svg_image
     - user
 _core:
   default_config_hash: Yj33guGRXeB-uq182k6bwtAUtKGpO17nkYxn8FnjhBM
@@ -32,4 +32,5 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

@@ -8,8 +8,8 @@ dependencies:
     - sass_theme_msd
 id: sass_theme_msd_userlogin
 theme: sass_theme_msd
-region: header_top
-weight: -9
+region: header
+weight: -4
 provider: null
 plugin: user_login_block
 settings:

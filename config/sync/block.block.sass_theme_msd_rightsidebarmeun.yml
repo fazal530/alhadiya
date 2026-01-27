@@ -1,0 +1,25 @@
+uuid: a4fd21f8-0401-444f-9fcc-de3d37837598
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.right-sidebar-meun
+  module:
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_rightsidebarmeun
+theme: sass_theme_msd
+region: sidebar_right
+weight: -6
+provider: null
+plugin: 'system_menu_block:right-sidebar-meun'
+settings:
+  id: 'system_menu_block:right-sidebar-meun'
+  label: 'Mafunzo Katika Miezi Ya Hijri: Ya Kutekeleza Na Ya Kujiepusha'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

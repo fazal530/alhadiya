@@ -1,0 +1,296 @@
+.page-layout-main-wrapper {
+    @extend .container;
+
+    .layout-main {
+        @extend .grid;
+
+        .left-sidebar-menu {
+            grid-column: 1/3;
+
+            .region--sidebar-left {
+
+                ul {
+                    li {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        gap: $space-10;
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                        border-bottom: 1px solid $quaternary-color;
+                        padding-block: $space-20 $space-8;
+
+                        a {
+                            text-decoration: none;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-content {
+            grid-column: 3/10;
+
+            .region--content {
+                #block-sass-theme-msd-corporateclean-menu-menu-sikiliza {
+                    .menu {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-radius: $space-5;
+                        border: 1px solid $primary-color;
+                        padding: $space-16 $space-10;
+
+                        li {
+                            list-style: none;
+                            display: flex;
+                            flex-direction: row-reverse;
+                            gap: $space-4;
+
+                            a {
+                                text-decoration: none;
+                                color: $black;
+                                @extend .h5;
+                            }
+
+                            &:hover {
+                                img {
+                                    filter: invert(33%) sepia(89%) saturate(2940%) hue-rotate(195deg) brightness(95%) contrast(90%);
+
+
+                                }
+
+                                a {
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #block-sass-theme-msd-haddesmenu {
+                    padding-block: $space-20;
+
+                    .menu {
+                        display: flex;
+                        flex-wrap: wrap;
+                        text-align: center;
+                        gap: $space-18;
+
+                        li {
+                            position: relative;
+                            overflow: hidden;
+                            flex-basis: 48.8%;
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                            padding-block: $space-27;
+                            background: $quaternary-color;
+                            color: $black;
+                            border-left: $space-8 solid $primary-color;
+                            @extend .h1;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                inset: 0;
+                                background: $primary-color;
+                                transform: scaleX(0);
+                                transform-origin: left;
+                                transition: transform .5s ease;
+                            }
+
+                            &:hover {
+                                color: $white;
+
+                                &::before {
+                                    transform: scaleX(1);
+                                }
+
+                                a {
+                                    color: $white;
+                                }
+
+                                .menu-description {
+                                    color: $white;
+                                }
+                            }
+
+                            a {
+                                position: relative;
+                                color: $black;
+                                text-decoration: none;
+                                padding-bottom: $space-6;
+                            }
+
+                            .menu-description {
+                                color: $black;
+                                position: relative;
+                            }
+
+
+                        }
+
+
+                    }
+                }
+
+                #block-sass-theme-msd-corporateclean-system-main {
+                    background: $quaternary-color;
+                    padding-block: $space-24;
+                    @extend .h2;
+
+                    p,
+                    h3 {
+                        padding-inline: $space-12;
+
+                        span {
+                            img {
+                                width: 100% !important;
+                            }
+                        }
+
+                        img {
+                            width: 100% !important;
+                        }
+                    }
+
+                    p:has(img) {
+                        padding: 0 !important;
+                    }
+
+
+
+                }
+            }
+        }
+
+        .right-sidebar-menu {
+            grid-column: 10/-1;
+
+            .region--sidebar-right {
+                #block-sass-theme-msd-topsearch {
+                    background-color: $quaternary-color;
+                    padding: $space-12 $space-16;
+                    border-radius: $space-5;
+                    margin-bottom: $space-20;
+
+                    h2 {
+                        @extend .h1;
+                        color: $green-color;
+                        text-align: center;
+                        padding-bottom: $space-17;
+                    }
+
+                    .top-search {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: $space-8;
+
+
+                        li {
+                            flex-basis: 30%;
+                            list-style: none;
+                            @extend .h4;
+                            color: $black;
+                            background-color: $white;
+                            padding: $space-5 $space-10;
+                            border-radius: $space-5;
+                        }
+                    }
+                }
+
+                #block-sass-theme-msd-rightsidebarmeun {
+                    h2 {
+                        @extend .h1;
+                        color: $green-color;
+                        padding-bottom: $space-20;
+                    }
+
+                    .menu {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: $space-10;
+
+                        li {
+                            flex-basis: 47%;
+                            list-style: none;
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+
+                            a {
+                                @extend .h2;
+                                text-decoration: none;
+                                color: $tertiary-color;
+                                order: 2;
+                                padding-block: $space-4;
+                            }
+
+                            .custom-image {
+                                order: 1;
+
+                                img {
+                                    width: 100%;
+                                    height: 153px;
+                                }
+                            }
+
+                            .custom-title {
+                                @extend .h5;
+                                order: 3;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.region--header-top {
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #block-sass-theme-msd-site-branding {
+        a {
+            img {
+                width: 92px;
+                height: 81px;
+            }
+        }
+    }
+
+    #block-sass-theme-msd-slogan {
+        img {
+            height: 105px;
+        }
+    }
+}
+
+.region--header {
+    @extend .container;
+    display: flex;
+    gap: $space-20;
+    align-items: center;
+    justify-content: space-between;
+
+    .search-block-form {
+        form {
+            display: flex;
+
+            input {
+                padding: $space-12 $space-16;
+                background-color: unset;
+                border: 1px solid $quaternary-color;
+                @extend .h3;
+                color: $gray-color;
+            }
+
+        }
+    }
+}

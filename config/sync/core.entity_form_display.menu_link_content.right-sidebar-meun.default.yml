@@ -1,0 +1,56 @@
+uuid: 9f27dca7-6ace-4125-9754-db7b1a3481ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.right-sidebar-meun.field_description
+    - field.field.menu_link_content.right-sidebar-meun.field_icon
+    - image.style.thumbnail
+    - system.menu.right-sidebar-meun
+  module:
+    - link
+    - menu_item_extras
+    - svg_image
+id: menu_link_content.right-sidebar-meun.default
+targetEntityType: menu_link_content
+bundle: right-sidebar-meun
+mode: default
+content:
+  field_description:
+    type: string_textfield
+    weight: 22
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon:
+    type: image_image
+    weight: 21
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

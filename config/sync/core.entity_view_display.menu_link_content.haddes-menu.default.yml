@@ -1,0 +1,27 @@
+uuid: 4976cbe5-ab55-4a38-b1a5-b915f53668aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.haddes-menu.field_description
+    - system.menu.haddes-menu
+id: menu_link_content.haddes-menu.default
+targetEntityType: menu_link_content
+bundle: haddes-menu
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_description:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,13 @@
+name: 'Sharethis test views'
+type: module
+description: 'Provides default views for sharethis tests.'
+package: Testing
+core_version_requirement: ^10.3 || ^11.0
+dependencies:
+  - sharethis:sharethis
+  - drupal:views
+
+# Information added by Drupal.org packaging script on 2025-02-01
+version: '3.1.0'
+project: 'sharethis'
+datestamp: 1738415787

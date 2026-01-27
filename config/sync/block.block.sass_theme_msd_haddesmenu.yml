@@ -1,0 +1,29 @@
+uuid: c803b648-500d-496d-a16f-495c786638b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.haddes-menu
+  module:
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_haddesmenu
+theme: sass_theme_msd
+region: content
+weight: -11
+provider: null
+plugin: 'system_menu_block:haddes-menu'
+settings:
+  id: 'system_menu_block:haddes-menu'
+  label: 'Haddes menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

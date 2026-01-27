@@ -1,0 +1,23 @@
+uuid: 3be6fd95-9649-44d2-979c-e4fc769320f7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e0e1ab00-7270-45c6-b47f-eb27f6c17f5f'
+  module:
+    - block_content
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_topsearch
+theme: sass_theme_msd
+region: sidebar_right
+weight: -7
+provider: null
+plugin: 'block_content:e0e1ab00-7270-45c6-b47f-eb27f6c17f5f'
+settings:
+  id: 'block_content:e0e1ab00-7270-45c6-b47f-eb27f6c17f5f'
+  label: 'Top Search'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

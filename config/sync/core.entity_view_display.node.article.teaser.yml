@@ -11,7 +11,7 @@ dependencies:
     - image.style.medium
     - node.type.article
   module:
-    - image
+    - svg_image
     - text
     - user
 _core:
@@ -51,5 +51,11 @@ content:
   links:
     weight: 100
     region: content
+  sharethis:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
 hidden:
   comment: true
+  langcode: true
