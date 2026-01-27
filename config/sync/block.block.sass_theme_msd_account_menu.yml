@@ -1,6 +1,6 @@
 uuid: 26a03bd6-527c-49df-aef0-4ea7bf368e36
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -12,8 +12,8 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: sass_theme_msd_account_menu
 theme: sass_theme_msd
-region: secondary_menu
-weight: -4
+region: header_top
+weight: 1
 provider: null
 plugin: 'system_menu_block:account'
 settings:

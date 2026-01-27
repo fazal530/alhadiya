@@ -1,0 +1,35 @@
+uuid: c21286a2-d626-4965-9b7b-3f93e668fb8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.menu-soma.field_icon
+    - system.menu.menu-soma
+  module:
+    - svg_image
+id: menu_link_content.menu-soma.default
+targetEntityType: menu_link_content
+bundle: menu-soma
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

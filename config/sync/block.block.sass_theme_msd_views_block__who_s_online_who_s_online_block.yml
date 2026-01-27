@@ -1,6 +1,6 @@
 uuid: 1d81d639-b359-4495-9c50-e926be81ac0e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.who_s_online
@@ -10,8 +10,8 @@ dependencies:
     - sass_theme_msd
 id: sass_theme_msd_views_block__who_s_online_who_s_online_block
 theme: sass_theme_msd
-region: compy_reg
-weight: 0
+region: header_top
+weight: -6
 provider: null
 plugin: 'views_block:who_s_online-who_s_online_block'
 settings:

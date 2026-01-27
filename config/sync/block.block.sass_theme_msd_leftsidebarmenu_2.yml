@@ -1,0 +1,25 @@
+uuid: 449923db-2673-49e5-9ba0-b2f46478d88c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.left-sidebar-menu
+  module:
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_leftsidebarmenu_2
+theme: sass_theme_msd
+region: sidebar_left
+weight: 0
+provider: null
+plugin: 'system_menu_block:left-sidebar-menu'
+settings:
+  id: 'system_menu_block:left-sidebar-menu'
+  label: 'left sidebar menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }
