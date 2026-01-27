@@ -1,0 +1,5 @@
+name: Global Prayer Times
+type: module
+description: Dynamic global prayer times with country and city filtering
+core_version_requirement: ^11
+package: Custom
