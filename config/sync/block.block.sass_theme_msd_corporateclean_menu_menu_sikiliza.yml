@@ -11,13 +11,13 @@ dependencies:
 id: sass_theme_msd_corporateclean_menu_menu_sikiliza
 theme: sass_theme_msd
 region: content
-weight: -10
+weight: -12
 provider: null
 plugin: 'system_menu_block:menu-sikiliza'
 settings:
   id: broken
   label: Sikiliza
-  label_display: visible
+  label_display: '0'
   provider: system
   level: 1
   depth: null

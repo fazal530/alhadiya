@@ -1,0 +1,45 @@
+uuid: d3152b70-aab6-4231-a2da-b49b944c6f18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.right-sidebar-meun.field_description
+    - field.field.menu_link_content.right-sidebar-meun.field_icon
+    - system.menu.right-sidebar-meun
+  module:
+    - svg_image
+id: menu_link_content.right-sidebar-meun.default
+targetEntityType: menu_link_content
+bundle: right-sidebar-meun
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_description:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

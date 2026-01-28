@@ -28,5 +28,11 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
+  sharethis:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
 hidden:
   comment_node_book: true
+  langcode: true

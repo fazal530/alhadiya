@@ -57,48 +57,34 @@
 <div id="page-wrapper">
 
 	<div id="page">
-		<div class="info-with-viewer">
-			{{ page.header_top }}
-		</div>
-
-		<header id="header" class="header" role="banner">
-			<div class="header_wrapper">
-				{{ page.header }}
-			</div>
-		</header>
+		{{ page.header_top }}
+		{{ page.header }}
 		{{ page.menubar }}
-
 		{{ page.breadcrumb }}
-		<div id="main-wrapper" class="page-layout-main-wrapper layout-container">
-			<div id="main"
-				class="layout-main {% if page.sidebar_left %}has-sidebar-left{% endif %} {% if page.sidebar_right %}has-sidebar-right{% endif %}">
-				{% if page.sidebar_left %}
-				<div id="sidebar-left" class="sidebar">
+
+		<div id="main-wrapper" class="page-layout-main-wrapper">
+			<div id="main" class="layout-main">
+				<div class="left-sidebar-menu">
 					{{ page.sidebar_left }}
 				</div>
-				{% endif %}
 
 				<main class="main-content">
 					{{ page.content }}
 				</main>
 
-				{% if page.sidebar_right %}
-				<div id="sidebar-right" class="sidebar">
+				<div class="right-sidebar-menu">
 					{{ page.sidebar_right }}
 				</div>
-				{% endif %}
 			</div>
 		</div>
 
 
 		<footer class="site-footer">
-			{% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
 			<div class="footer-main-wrapper">
 				{{ page.footer_first }}
 				{{ page.footer_second }}
 				{{ page.footer_third }}
 			</div>
-			{% endif %}
 		</footer>
 	</div>
 </div>

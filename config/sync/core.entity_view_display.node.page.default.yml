@@ -37,4 +37,10 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+  sharethis:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  langcode: true
