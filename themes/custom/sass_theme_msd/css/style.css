@@ -49,7 +49,7 @@ h2 {
   }
 }
 
-.h3, .region--header .search-block-form form input,
+.h3, .region--menubar .visitor-stats, .region--header #block-sass-theme-msd-usermenu ul li a, .region--header .search-block-form form input,
 h3 {
   font-family: "lato", sans-serif;
   font-size: 15px;
@@ -58,21 +58,21 @@ h3 {
   line-height: 22px;
 }
 @media (min-width: 768px) {
-  .h3, .region--header .search-block-form form input,
+  .h3, .region--menubar .visitor-stats, .region--header #block-sass-theme-msd-usermenu ul li a, .region--header .search-block-form form input,
   h3 {
     font-size: 16px;
     line-height: 26px;
   }
 }
 @media (min-width: 1280px) {
-  .h3, .region--header .search-block-form form input,
+  .h3, .region--menubar .visitor-stats, .region--header #block-sass-theme-msd-usermenu ul li a, .region--header .search-block-form form input,
   h3 {
     font-size: 18px;
     line-height: 28px;
   }
 }
 
-.h4, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li,
+.h4, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper ul li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date,
 h4 {
   font-family: "lato", sans-serif;
   font-size: 14px;
@@ -81,14 +81,14 @@ h4 {
   line-height: 20px;
 }
 @media (min-width: 768px) {
-  .h4, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li,
+  .h4, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper ul li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date,
   h4 {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media (min-width: 1280px) {
-  .h4, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li,
+  .h4, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper ul li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date,
   h4 {
     font-size: 16px;
     line-height: 24px;
@@ -123,17 +123,17 @@ h5 {
   src: url(../../fonts/Lato/Lato-Black.ttf);
   font-weight: 400;
 }
-.container, .region--header, .region--header-top, .page-layout-main-wrapper {
+.container, .region--menubar .visitor-stats, .region--header, .region--header-top, .page-layout-main-wrapper {
   padding-inline: 25px !important;
   margin-inline: auto;
 }
 @media (min-width: 768px) {
-  .container, .region--header, .region--header-top, .page-layout-main-wrapper {
+  .container, .region--menubar .visitor-stats, .region--header, .region--header-top, .page-layout-main-wrapper {
     padding-inline: 50px !important;
   }
 }
 @media (min-width: 1280px) {
-  .container, .region--header, .region--header-top, .page-layout-main-wrapper {
+  .container, .region--menubar .visitor-stats, .region--header, .region--header-top, .page-layout-main-wrapper {
     padding-inline: 60px !important;
     margin-inline: auto !important;
     max-width: 1440px;
@@ -511,11 +511,49 @@ body {
 .page-layout-main-wrapper .layout-main .right-sidebar-menu {
   grid-column: 10/-1;
 }
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ECECEC;
+  border-radius: 5px;
+  border: 1px solid #9DCB68;
+  padding-block: 8px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper {
+  display: flex;
+  gap: 20px;
+  order: 2;
+  padding-inline: 8px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper .form-item-country,
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper #city-wrapper {
+  flex-basis: 50%;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper .form-item-country .form-select,
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper #city-wrapper .form-select {
+  width: 100%;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper {
+  order: 1;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date {
+  padding-inline: 8px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date strong {
+  font-weight: 400;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper ul {
+  display: flex;
+  list-style: none;
+  margin-block: 20px;
+  background-color: #fff;
+  padding-inline: 8px;
+}
 .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch {
   background-color: #ECECEC;
   padding: 12px 16px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-block: 20px;
 }
 .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch h2 {
   color: #008000;
@@ -595,6 +633,28 @@ body {
   background-color: unset;
   border: 1px solid #ECECEC;
   color: #898888;
+}
+.region--header #block-sass-theme-msd-usermenu ul li {
+  list-style: none;
+}
+.region--header #block-sass-theme-msd-usermenu ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: #9DCB68;
+}
+
+.region--menubar {
+  background-color: #393;
+  margin-block: 40px 20px;
+}
+.region--menubar .visitor-stats {
+  display: flex;
+  justify-content: center;
+  gap: 87px;
+  color: #fff;
+  padding-block: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -170,11 +170,62 @@
             grid-column: 10/-1;
 
             .region--sidebar-right {
+
+                #global-prayer-times-form {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $quaternary-color;
+                    border-radius: 5px;
+                    border: 1px solid $secondary-color;
+                    padding-block: $space-8;
+
+                    .location-wrapper {
+                        display: flex;
+                        gap: $space-20;
+                        order: 2;
+                        padding-inline: $space-8;
+
+                        .form-item-country,
+                        #city-wrapper {
+                            flex-basis: 50%;
+
+                            .form-select {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    #prayer-wrapper {
+                        order: 1;
+
+                        .prayer-date {
+                            @extend .h4;
+                            padding-inline: $space-8;
+
+                            strong {
+                                font-weight: 400;
+                            }
+                        }
+
+                        ul {
+                            display: flex;
+                            list-style: none;
+                            margin-block: $space-20;
+                            background-color: $white;
+                            padding-inline: $space-8;
+
+                            li {
+                                @extend .h4;
+                            }
+                        }
+                    }
+                }
+
                 #block-sass-theme-msd-topsearch {
                     background-color: $quaternary-color;
                     padding: $space-12 $space-16;
                     border-radius: $space-5;
-                    margin-bottom: $space-20;
+                    margin-block: $space-20;
 
                     h2 {
                         @extend .h1;
@@ -292,5 +343,38 @@
             }
 
         }
+    }
+
+    #block-sass-theme-msd-usermenu {
+        ul {
+            li {
+                list-style: none;
+
+                a {
+                    @extend .h3;
+                    text-decoration: none;
+                    color: $white;
+                    padding: $space-10 $space-40;
+                    border-radius: $space-5;
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+.region--menubar {
+    background-color: $tertiary-color ;
+    margin-block: $space-40 $space-20;
+
+    .visitor-stats {
+        @extend .container;
+        display: flex;
+        justify-content: center;
+        gap: 87px;
+        @extend .h3;
+        color: $white;
+        padding-block: $space-8;
+
     }
 }

@@ -1,0 +1,9 @@
+name: Themable Forms
+description: Provides better theming experience for theming forms.
+core_version_requirement: ^8 || ^9 || ^10 || ^11
+type: module
+
+# Information added by Drupal.org packaging script on 2025-10-22
+version: '8.x-1.1'
+project: 'themable_forms'
+datestamp: 1761139375

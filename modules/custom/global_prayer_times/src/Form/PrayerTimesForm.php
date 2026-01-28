@@ -33,7 +33,20 @@ class PrayerTimesForm extends FormBase {
     $country = $form_state->getValue('country');
     $city = $form_state->getValue('city');
 
-    $form['country'] = [
+    /**
+     * ===============================
+     * LOCATION WRAPPER (FLEX)
+     * ===============================
+     */
+    $form['location_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => ['location-wrapper'],
+      ],
+    ];
+
+    // COUNTRY FIELD
+    $form['location_wrapper']['country'] = [
       '#type' => 'select',
       '#title' => $this->t('Country'),
       '#options' => $countries,
@@ -44,15 +57,18 @@ class PrayerTimesForm extends FormBase {
       ],
     ];
 
-    $form['city_wrapper'] = [
+    // CITY AJAX CONTAINER
+    $form['location_wrapper']['city_wrapper'] = [
       '#type' => 'container',
-      '#attributes' => ['id' => 'city-wrapper'],
+      '#attributes' => [
+        'id' => 'city-wrapper',
+      ],
     ];
 
     if ($country) {
       $cities = $this->locationApi->getCities($country);
 
-      $form['city_wrapper']['city'] = [
+      $form['location_wrapper']['city_wrapper']['city'] = [
         '#type' => 'select',
         '#title' => $this->t('City'),
         '#options' => $cities,
@@ -64,6 +80,11 @@ class PrayerTimesForm extends FormBase {
       ];
     }
 
+    /**
+     * ===============================
+     * PRAYER TIMES WRAPPER
+     * ===============================
+     */
     $form['prayer_wrapper'] = [
       '#type' => 'container',
       '#attributes' => ['id' => 'prayer-wrapper'],
@@ -71,10 +92,12 @@ class PrayerTimesForm extends FormBase {
 
     if ($country && $city) {
       $data = $this->prayerApi->getTimes($city, $country);
+
       if (!empty($data['data']['timings'])) {
         $times = $data['data']['timings'];
         $date = $data['data']['date'];
         $hijri = $date['hijri'];
+
         $hijri_date_string = "{$hijri['weekday']['en']}, {$hijri['day']} {$hijri['month']['en']} {$hijri['year']}";
 
         $form['prayer_wrapper']['date'] = [
@@ -99,16 +122,24 @@ class PrayerTimesForm extends FormBase {
     return $form;
   }
 
+  /**
+   * AJAX callback: Update City
+   */
   public function updateCity(array &$form, FormStateInterface $form_state) {
-    return $form['city_wrapper'];
+    return $form['location_wrapper']['city_wrapper'];
   }
 
+  /**
+   * AJAX callback: Update Prayer Times
+   */
   public function updatePrayer(array &$form, FormStateInterface $form_state) {
     return $form['prayer_wrapper'];
   }
 
-  // REQUIRED by FormInterface
+  /**
+   * Required submit handler
+   */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    // No submit action needed (AJAX-only form)
+    // No submit action (AJAX-only form)
   }
 }
