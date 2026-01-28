@@ -33,11 +33,67 @@ class PrayerTimesForm extends FormBase {
     $country = $form_state->getValue('country');
     $city = $form_state->getValue('city');
 
+    $cities = [];
+
+    // Auto-detect location if not set
+    if (!$country && !$city) {
+      $ip = \Drupal::request()->getClientIp();
+      
+      // Check if IP is private/reserved or force test IP for dev
+      if (strpos($ip, '127.') === 0 || strpos($ip, '172.') === 0 || strpos($ip, '192.') === 0 || $ip == '::1') {
+         $ip = '103.151.42.130'; // Example IP (Lahore, Pakistan)
+      }
+      
+      $location = $this->locationApi->getLocationFromIp($ip);
+      if ($location && isset($location['country_name']) && isset($location['city'])) {
+        $detected_country = $location['country_name'];
+        $detected_city = $location['city'];
+        
+        \Drupal::logger('global_prayer_times')->info('Detected: Country=@country, City=@city', [
+            '@country' => $detected_country,
+            '@city' => $detected_city
+        ]);
+
+        // Check if country exists in the list
+        if (array_key_exists($detected_country, $countries)) {
+             $country = $detected_country;
+             $cities = $this->locationApi->getCities($country);
+             
+             // Case-insensitive search for city
+             $found_city = NULL;
+             foreach ($cities as $c_key => $c_val) {
+                 if (strcasecmp(trim($c_val), trim($detected_city)) === 0) {
+                     $found_city = $c_key;
+                     break;
+                 }
+             }
+
+             if ($found_city) {
+                 $city = $found_city;
+                 \Drupal::logger('global_prayer_times')->info('City matched: @city', ['@city' => $city]);
+             } else {
+                 // If not found, add it to the list anyway so it can be selected.
+                 // The Prayer Times API is likely to understand it even if it's not in the Countries API list.
+                 $city = $detected_city;
+                 $cities[$city] = $city;
+                 asort($cities); // Keep it sorted
+                 
+                 \Drupal::logger('global_prayer_times')->warning('City "@city" added to options (exact match not found).', [
+                    '@city' => $detected_city
+                 ]);
+             }
+        } else {
+            \Drupal::logger('global_prayer_times')->warning('Country "@country" not found in list.', ['@country' => $detected_country]);
+        }
+      }
+    }
+
     $form['country'] = [
       '#type' => 'select',
       '#title' => $this->t('Country'),
       '#options' => $countries,
       '#empty_option' => $this->t('- Select country -'),
+      '#default_value' => $country,
       '#ajax' => [
         'callback' => '::updateCity',
         'wrapper' => 'city-wrapper',
@@ -50,13 +106,17 @@ class PrayerTimesForm extends FormBase {
     ];
 
     if ($country) {
-      $cities = $this->locationApi->getCities($country);
+      // If cities were not fetched during auto-detection, fetch them now
+      if (empty($cities)) {
+        $cities = $this->locationApi->getCities($country);
+      }
 
       $form['city_wrapper']['city'] = [
         '#type' => 'select',
         '#title' => $this->t('City'),
         '#options' => $cities,
         '#empty_option' => $this->t('- Select city -'),
+        '#default_value' => $city,
         '#ajax' => [
           'callback' => '::updatePrayer',
           'wrapper' => 'prayer-wrapper',
