@@ -4,7 +4,7 @@
 .example {
   font-size: calculate-values (12, 20, 768, 1280);
 */
-.h1,
+.h1, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun h2, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch h2, .page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li,
 h1 {
   font-family: "lato", sans-serif;
   font-size: 18px;
@@ -13,21 +13,21 @@ h1 {
   line-height: 24px;
 }
 @media (min-width: 768px) {
-  .h1,
+  .h1, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun h2, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch h2, .page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li,
   h1 {
     font-size: 20px;
     line-height: 28px;
   }
 }
 @media (min-width: 1280px) {
-  .h1,
+  .h1, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun h2, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch h2, .page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li,
   h1 {
     font-size: 22px;
     line-height: 30px;
   }
 }
 
-.h2,
+.h2, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li a, .page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main,
 h2 {
   font-family: "lato", sans-serif;
   font-size: 16px;
@@ -35,21 +35,21 @@ h2 {
   line-height: 22px;
 }
 @media (min-width: 768px) {
-  .h2,
+  .h2, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li a, .page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main,
   h2 {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media (min-width: 1280px) {
-  .h2,
+  .h2, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li a, .page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main,
   h2 {
     font-size: 18px;
     line-height: 26px;
   }
 }
 
-.h3,
+.h3, .region--menubar .visitor-stats, .region--header #block-sass-theme-msd-usermenu ul li a, .region--header .search-block-form form input,
 h3 {
   font-family: "lato", sans-serif;
   font-size: 15px;
@@ -58,21 +58,21 @@ h3 {
   line-height: 22px;
 }
 @media (min-width: 768px) {
-  .h3,
+  .h3, .region--menubar .visitor-stats, .region--header #block-sass-theme-msd-usermenu ul li a, .region--header .search-block-form form input,
   h3 {
     font-size: 16px;
     line-height: 26px;
   }
 }
 @media (min-width: 1280px) {
-  .h3,
+  .h3, .region--menubar .visitor-stats, .region--header #block-sass-theme-msd-usermenu ul li a, .region--header .search-block-form form input,
   h3 {
     font-size: 18px;
     line-height: 28px;
   }
 }
 
-.h4,
+.h4, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper ul li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date,
 h4 {
   font-family: "lato", sans-serif;
   font-size: 14px;
@@ -81,21 +81,21 @@ h4 {
   line-height: 20px;
 }
 @media (min-width: 768px) {
-  .h4,
+  .h4, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper ul li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date,
   h4 {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media (min-width: 1280px) {
-  .h4,
+  .h4, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper ul li, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date,
   h4 {
     font-size: 16px;
     line-height: 24px;
   }
 }
 
-.h5,
+.h5, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li .custom-title, .page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-menu-menu-sikiliza .menu li a,
 h5 {
   font-family: "lato", sans-serif;
   font-size: 12px;
@@ -104,14 +104,14 @@ h5 {
   line-height: 18px;
 }
 @media (min-width: 768px) {
-  .h5,
+  .h5, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li .custom-title, .page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-menu-menu-sikiliza .menu li a,
   h5 {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media (min-width: 1280px) {
-  .h5,
+  .h5, .page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li .custom-title, .page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-menu-menu-sikiliza .menu li a,
   h5 {
     font-size: 14px;
     line-height: 20px;
@@ -123,17 +123,17 @@ h5 {
   src: url(../../fonts/Lato/Lato-Black.ttf);
   font-weight: 400;
 }
-.container {
+.container, .region--menubar .visitor-stats, .region--header, .region--header-top, .page-layout-main-wrapper {
   padding-inline: 25px !important;
   margin-inline: auto;
 }
 @media (min-width: 768px) {
-  .container {
+  .container, .region--menubar .visitor-stats, .region--header, .region--header-top, .page-layout-main-wrapper {
     padding-inline: 50px !important;
   }
 }
 @media (min-width: 1280px) {
-  .container {
+  .container, .region--menubar .visitor-stats, .region--header, .region--header-top, .page-layout-main-wrapper {
     padding-inline: 60px !important;
     margin-inline: auto !important;
     max-width: 1440px;
@@ -266,19 +266,19 @@ h5 {
   font-size: 1.5rem;
 }
 
-.grid {
+.grid, .page-layout-main-wrapper .layout-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
   row-gap: 20px;
 }
 @media (min-width: 768px) {
-  .grid {
+  .grid, .page-layout-main-wrapper .layout-main {
     grid-template-columns: repeat(8, 1fr);
   }
 }
 @media (min-width: 1280px) {
-  .grid {
+  .grid, .page-layout-main-wrapper .layout-main {
     grid-template-columns: repeat(12, 1fr);
   }
 }
@@ -326,6 +326,7 @@ body {
   background-color: #fff;
   color: #222;
   transition: background 0.3s, color 0.3s;
+  font-family: "lato", sans-serif;
 }
 
 .hide-on-mobile {
@@ -392,9 +393,268 @@ body {
   display: none;
 }
 
-.layout-main {
+.page-layout-main-wrapper .layout-main .left-sidebar-menu {
+  grid-column: 1/3;
+}
+.page-layout-main-wrapper .layout-main .left-sidebar-menu .region--sidebar-left ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  border-bottom: 1px solid #ECECEC;
+  padding-block: 20px 8px;
+}
+.page-layout-main-wrapper .layout-main .left-sidebar-menu .region--sidebar-left ul li a {
+  text-decoration: none;
+  color: #222;
+}
+.page-layout-main-wrapper .layout-main .main-content {
+  grid-column: 3/10;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-menu-menu-sikiliza .menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #1487D4;
+  padding: 16px 10px;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-menu-menu-sikiliza .menu li {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4px;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-menu-menu-sikiliza .menu li a {
+  text-decoration: none;
+  color: #222;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-menu-menu-sikiliza .menu li:hover img {
+  filter: invert(33%) sepia(89%) saturate(2940%) hue-rotate(195deg) brightness(95%) contrast(90%);
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-menu-menu-sikiliza .menu li:hover a {
+  color: #1487D4;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu {
+  padding-block: 20px;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 18px;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li {
+  position: relative;
+  overflow: hidden;
+  flex-basis: 48.8%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-block: 27px;
+  background: #ECECEC;
+  color: #222;
+  border-left: 8px solid #1487D4;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #1487D4;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li:hover {
+  color: #fff;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li:hover::before {
+  transform: scaleX(1);
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li:hover a {
+  color: #fff;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li:hover .menu-description {
+  color: #fff;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li a {
+  position: relative;
+  color: #222;
+  text-decoration: none;
+  padding-bottom: 6px;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-haddesmenu .menu li .menu-description {
+  color: #222;
+  position: relative;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main {
+  background: #ECECEC;
+  padding-block: 24px;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main p,
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main h3 {
+  padding-inline: 12px;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main p span img,
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main h3 span img {
+  width: 100% !important;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main p img,
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main h3 img {
+  width: 100% !important;
+}
+.page-layout-main-wrapper .layout-main .main-content .region--content #block-sass-theme-msd-corporateclean-system-main p:has(img) {
+  padding: 0 !important;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu {
+  grid-column: 10/-1;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ECECEC;
+  border-radius: 5px;
+  border: 1px solid #9DCB68;
+  padding-block: 8px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper {
+  display: flex;
+  gap: 20px;
+  order: 2;
+  padding-inline: 8px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper .form-item-country,
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper #city-wrapper {
+  flex-basis: 50%;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper .form-item-country .form-select,
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form .location-wrapper #city-wrapper .form-select {
+  width: 100%;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper {
+  order: 1;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date {
+  padding-inline: 8px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper .prayer-date strong {
+  font-weight: 400;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #global-prayer-times-form #prayer-wrapper ul {
+  display: flex;
+  list-style: none;
+  margin-block: 20px;
+  background-color: #fff;
+  padding-inline: 8px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch {
+  background-color: #ECECEC;
+  padding: 12px 16px;
+  border-radius: 5px;
+  margin-block: 20px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch h2 {
+  color: #008000;
+  text-align: center;
+  padding-bottom: 17px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-topsearch .top-search li {
+  flex-basis: 30%;
+  list-style: none;
+  color: #222;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun h2 {
+  color: #008000;
+  padding-bottom: 20px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li {
+  flex-basis: 47%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li a {
+  text-decoration: none;
+  color: #393;
+  order: 2;
+  padding-block: 4px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li .custom-image {
+  order: 1;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li .custom-image img {
+  width: 100%;
+  height: 153px;
+}
+.page-layout-main-wrapper .layout-main .right-sidebar-menu .region--sidebar-right #block-sass-theme-msd-rightsidebarmeun .menu li .custom-title {
+  order: 3;
+}
+
+.region--header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.region--header-top #block-sass-theme-msd-site-branding a img {
+  width: 92px;
+  height: 81px;
+}
+.region--header-top #block-sass-theme-msd-slogan img {
+  height: 105px;
+}
+
+.region--header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.region--header .search-block-form form {
+  display: flex;
+}
+.region--header .search-block-form form input {
+  padding: 12px 16px;
+  background-color: unset;
+  border: 1px solid #ECECEC;
+  color: #898888;
+}
+.region--header #block-sass-theme-msd-usermenu ul li {
+  list-style: none;
+}
+.region--header #block-sass-theme-msd-usermenu ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: #9DCB68;
+}
+
+.region--menubar {
+  background-color: #393;
+  margin-block: 40px 20px;
+}
+.region--menubar .visitor-stats {
+  display: flex;
+  justify-content: center;
+  gap: 87px;
+  color: #fff;
+  padding-block: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

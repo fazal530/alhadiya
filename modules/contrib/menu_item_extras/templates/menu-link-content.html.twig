@@ -23,12 +23,11 @@
     elements['#view_mode'] ? 'menu-type-' ~ elements['#view_mode'],
   ] %}
 
-  <div{{ attributes.addClass(menu_dropdown_classes) }}>
     {% if show_item_link %}
       {{ link(menu_link_content.getTitle(), menu_link_content.getUrlObject()) }}
     {% endif %}
     {% if content %}
       {{ content }}
     {% endif %}
-  </div>
+
 {% endmacro %}

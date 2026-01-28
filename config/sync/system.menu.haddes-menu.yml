@@ -1,0 +1,8 @@
+uuid: b865af87-12ca-4ca5-a16b-99002144c302
+langcode: en
+status: true
+dependencies: {  }
+id: haddes-menu
+label: 'Haddes menu'
+description: ''
+locked: false

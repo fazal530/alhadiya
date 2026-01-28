@@ -1,0 +1,8 @@
+uuid: f57cc39d-d191-4fbb-bb67-812e01154d45
+langcode: en
+status: true
+dependencies: {  }
+id: right-sidebar-meun
+label: 'Right Sidebar Meun'
+description: ''
+locked: false

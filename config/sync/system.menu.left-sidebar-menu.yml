@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: left-sidebar-menu
-label: 'left sidebar menu'
+label: 'Left Sidebar Menu'
 description: ''
 locked: false
